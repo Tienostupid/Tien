@@ -2,8 +2,8 @@
 
 # Nội dung học phần  
 
-# Chương 1
-## Giới thiệu về máy tính
+# Chương 1 Giới thiệu về máy tính
+
 ### 1.Máy tính là gì?
 - Thiết bị điện tử có khả năng thao tác thông tin và dữ liệu; lưu trữ, truy xuất và xử lý dữ liệu.
 **Ứng dụng của máy tính:**
@@ -57,7 +57,7 @@
 **Hệ thống vào ra:** Kết nối thông tin giữa máy tính và thế giới bên ngoài; bao gồm các mô-đun điều khiển vào ra và thiết bị ngoại vi.
 
 
-# Chương 2
+# Chương 2 Thông Tin Trong Máy Tính
  ### 1.Biểu diễn thông tin trong máy tính:
 
 **Bit và Byte:**
@@ -115,7 +115,7 @@
 | **Trừ số âm**           | - Chuyển số âm thành số dương và thực hiện phép cộng. <br> - Kết quả có thể là dương hoặc âm. | -5<sub>10</sub> - 3<sub>10</sub>: <br> 1011<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (-8<sub>10</sub>) |
 | **Trừ số trái dấu**     | - Nếu một số dương và một số âm, cộng với bù 2 của số âm. <br> - Kết quả có thể dương hoặc âm. | 5<sub>10</sub> - (-3)<sub>10</sub>: <br> 0101<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (8<sub>10</sub>) |
 
-# Chương 3
+# Chương 3 Sử Dụng AI
 ### 1.Khái niệm cơ bản
 - Tập tin: Là đơn vị lưu trữ dữ liệu với các định dạng khác nhau, như văn bản, hình ảnh, âm thanh, và có phần mở rộng (ví dụ: .pdf, .txt).
 - Thư mục: Là đơn vị logic để tổ chức và nhóm các tập tin, có thể chứa nhiều thư mục con.
@@ -139,7 +139,7 @@
 - Ứng dụng ChatGPT trong học tập để tóm tắt tài liệu, giải thích khái niệm và hỗ trợ lập trình.
 ### 4.Đạo đức sử dụng AI
 - Cần sử dụng ChatGPT một cách hợp lý và chịu trách nhiệm với nội dung được tạo ra, kiểm chứng thông tin từ nhiều nguồn.
-# Chương 4
+# Chương 4 Linux
 ### 1. Giới thiệu về Linux
 ***Unix:***
 - Phát triển năm 1969 bởi Dennis Ritchie và Ken Thompson tại Bell Labs.
@@ -264,5 +264,49 @@
 | 775         | rwxrwxr-x         |
 | 777         | rwxrwxrwx         |
 
-# Chương 5
-- Githib
+# Chương 5 Github
+### 1. **Kiểm soát phiên bản**
+   - Khái niệm về kiểm soát phiên bản và các vấn đề liên quan.
+   - Cách sử dụng Git và GitHub cho việc quản lý mã nguồn.
+   - Kiểm soát phiên bản cá nhân và làm việc nhóm.
+
+### 2. **Lợi ích của kiểm soát phiên bản**
+   - Khôi phục mã khi gặp lỗi.
+   - Quản lý thay đổi trong dự án.
+   - Hợp tác hiệu quả giữa các thành viên trong nhóm.
+
+### 3. **Khái niệm về kho lưu trữ**
+   - Repo là vị trí lưu trữ bản sao của tất cả các tập tin.
+   - Thực hiện các thao tác như commit và push để lưu trữ thay đổi.
+
+### 4. **Sử dụng Git**
+   - Thiết lập Git với tên và email.
+   - Cách tạo kho lưu trữ, thêm tệp và commit.
+   - Quản lý nhánh và hợp nhất.
+
+### 5. **Thực hành tốt**
+   - Luôn pull trước khi chỉnh sửa.
+   - Commit các thay đổi nhỏ và có nghĩa.
+   - Push thay đổi sau khi commit.
+
+### Bảng câu lệnh Git
+
+| Câu lệnh                          | Mô tả                                                                           |
+|-----------------------------------|---------------------------------------------------------------------------------|
+| `git init`                        | Tạo một kho lưu trữ Git mới trong thư mục hiện tại.                           |
+| `git clone <url>`                | Sao chép kho lưu trữ từ xa về máy tính cục bộ.                                 |
+| `git add <file>`                 | Thêm tệp vào vùng dàn dựng để chuẩn bị commit.                                 |
+| `git commit -m "<message>"`      | Ghi lại một ảnh chụp nhanh của vùng dàn dựng với thông điệp mô tả.            |
+| `git status`                     | Kiểm tra trạng thái của các tệp trong thư mục làm việc và vùng dàn dựng.      |
+| `git diff`                       | Hiển thị sự khác biệt giữa tệp đã sửa đổi và tệp đã được dàn dựng.            |
+| `git pull origin <branch>`       | Lấy các thay đổi mới từ kho lưu trữ từ xa và hợp nhất vào nhánh hiện tại.    |
+| `git push origin <branch>`       | Đẩy các thay đổi từ kho lưu trữ cục bộ lên kho lưu trữ từ xa.                 |
+| `git branch`                     | Liệt kê tất cả các nhánh trong kho lưu trữ.                                    |
+| `git checkout <branch>`          | Chuyển sang nhánh khác.                                                         |
+| `git merge <branch>`             | Hợp nhất nhánh khác vào nhánh hiện tại.                                        |
+| `git log`                        | Xem nhật ký của tất cả các thay đổi trong kho lưu trữ cục bộ.                  |
+| `git reset HEAD <file>`          | Bỏ chọn một tệp đã được thêm vào vùng dàn dựng.                                |
+| `git help <command>`             | Nhận thông tin trợ giúp về một lệnh cụ thể.                                   |
+
+### Kết luận
+Sử dụng Git để quản lý mã nguồn sẽ giúp bạn kiểm soát các thay đổi, khôi phục phiên bản cũ và làm việc hiệu quả hơn trong nhóm. Đừng quên thực hành tốt các thao tác với Git để tránh gặp phải các vấn đề thường gặp.
