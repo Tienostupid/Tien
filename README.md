@@ -95,25 +95,15 @@
 
 4. Số nguyên có dấu:
 
-Phương pháp bù 2:
-Số nguyên có dấu được biểu diễn bằng bù 2 để dễ dàng thực hiện phép toán cộng và trừ.
-Ví dụ, để biểu diễn 
-−
-3
-−3 trong 8 bit:
-Biểu diễn 
-3
-3 dưới dạng nhị phân: 
-00000011
-00000011.
-Đảo bit: 
-11111100
-11111100.
-Cộng 1: 
-11111101
-11111101.
-Kiểm tra dấu số:
-Bit đầu tiên được dùng để chỉ dấu số: 0 cho số dương và 1 cho số âm.
+| **Chuyển Đổi**                         | **Cách Thực Hiện**                                                                                              | **Ví Dụ**                                               |
+|----------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Thập Phân sang Nhị Phân (bù 2)**     | - Đối với số dương: Chuyển đổi giống như số thập phân thông thường. <br> - Đối với số âm: <br> 1. Chuyển đổi sang nhị phân. <br> 2. Lấy bù 2 bằng cách đảo bit và cộng 1. | - 5<sub>10</sub> → 0101<sub>2</sub> <br> - (-5)<sub>10</sub>: <br> 1. 5 → 0101<sub>2</sub> <br> 2. Đảo bit: 1010 <br> 3. Cộng 1: 1011<sub>2</sub> |
+| **Nhị Phân sang Thập Phân (bù 2)**     | - Nếu bit cao nhất là 0, tính giá trị bình thường. <br> - Nếu bit cao nhất là 1, lấy bù 2: <br> 1. Đảo bit. <br> 2. Cộng 1. <br> 3. Lấy giá trị âm của kết quả. | 1101<sub>2</sub>: <br> 1. Bit cao nhất là 1 → đảo bit: 0010 <br> 2. Cộng 1: 0011 <br> 3. Giá trị = -3<sub>10</sub> |
+| **Thập Phân sang Bát Phân (bù 2)**     | - Chuyển đổi sang nhị phân trước, sau đó chuyển sang bát phân. <br> - Đối với số âm, chuyển sang bù 2 trước. | 65<sub>10</sub> → 101<sub>8</sub> <br> - (-65)<sub>10</sub> → <br> 1. 65 → 101<sub>2</sub> → Đảo bit: 010 <br> 2. Cộng 1: 011 → 77<sub>8</sub> |
+| **Bát Phân sang Thập Phân (bù 2)**     | - Chuyển đổi sang nhị phân trước. <br> - Nếu bit cao nhất là 7, dùng bù 2.                                     | 101<sub>8</sub> → 65<sub>10</sub> <br> - 777<sub>8</sub>: <br> 1. Chuyển đổi → 111111111<sub>2</sub> → Đảo bit: 000000000 <br> 2. Cộng 1: 000000001 = -65<sub>10</sub> |
+| **Thập Phân sang Thập Lục Phân (bù 2)**| - Chuyển đổi sang nhị phân, sau đó sang thập lục phân. <br> - Đối với số âm, tìm bù 2.                         | 255<sub>10</sub> → FF<sub>16</sub> <br> - (-255)<sub>10</sub>: <br> 1. 255 → 11111111<sub>2</sub> → Đảo bit: 00000000 <br> 2. Cộng 1: 00000001 → 01<sub>16</sub> |
+| **Thập Lục Phân sang Thập Phân (bù 2)**| - Chuyển đổi sang nhị phân trước. <br> - Nếu bit cao nhất là F, lấy bù 2.                                     | FF<sub>16</sub> → 255<sub>10</sub> <br> - 80<sub>16</sub>: <br> 1. 80 → 10000000<sub>2</sub> → Đảo bit: 01111111 <br> 2. Cộng 1: 10000000 → -128<sub>10</sub> |
+
 5. Phép cộng - trừ trên số nguyên:
 
 Cộng số nguyên có dấu:
