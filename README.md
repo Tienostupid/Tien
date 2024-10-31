@@ -58,7 +58,234 @@
 
 
 # Chương 2
+ Biểu diễn thông tin trong máy tính:
 
+Bit và Byte:
+Thông tin trong máy tính được biểu diễn bằng các bit, với mỗi bit có thể là 0 hoặc 1.
+Một byte gồm 8 bit, có thể biểu diễn 256 giá trị khác nhau (từ 0 đến 255).
+Dữ liệu và kiểu dữ liệu:
+Các loại dữ liệu cơ bản trong máy tính bao gồm số nguyên, số thực, ký tự, chuỗi, và mảng.
+Dữ liệu được lưu trữ và xử lý trong bộ nhớ, có thể được tổ chức dưới dạng cấu trúc dữ liệu phức tạp hơn.
+2. Hệ thống số:
+
+Các hệ thống số chính:
+Hệ nhị phân (cơ số 2): Chỉ sử dụng hai ký tự 0 và 1. Ví dụ: 
+101
+1
+2
+1011 
+2
+​
+  tương đương với 
+1
+1
+10
+11 
+10
+​
+ .
+Hệ thập phân (cơ số 10): Sử dụng mười ký tự từ 0 đến 9. Ví dụ: 
+12
+3
+10
+123 
+10
+​
+ .
+Hệ bát phân (cơ số 8): Sử dụng tám ký tự từ 0 đến 7. Ví dụ: 
+1
+7
+8
+17 
+8
+​
+ .
+Hệ thập lục phân (cơ số 16): Sử dụng mười sáu ký tự (0-9 và A-F). Ví dụ: 
+1
+𝐴
+16
+1A 
+16
+​
+ .
+Ý nghĩa và ứng dụng:
+Mỗi hệ thống có ứng dụng riêng, ví dụ hệ nhị phân là nền tảng của lập trình máy tính, trong khi hệ thập lục phân thường dùng để biểu diễn địa chỉ bộ nhớ.
+3. Chuyển đổi cơ số:
+
+Chuyển đổi giữa các hệ số:
+Từ thập phân sang nhị phân:
+Phương pháp chia liên tiếp cho 2 và ghi lại phần dư. Ví dụ: để chuyển 
+1
+3
+10
+13 
+10
+​
+  sang nhị phân:
+13
+÷
+2
+=
+6
+13÷2=6 dư 1
+6
+÷
+2
+=
+3
+6÷2=3 dư 0
+3
+÷
+2
+=
+1
+3÷2=1 dư 1
+1
+÷
+2
+=
+0
+1÷2=0 dư 1
+Kết quả: 
+110
+1
+2
+1101 
+2
+​
+ .
+Từ nhị phân sang thập phân:
+Nhân từng bit với 
+2
+𝑛
+2 
+n
+  (với 
+𝑛
+n là chỉ số bit từ bên phải sang trái). Ví dụ: 
+110
+1
+2
+=
+1
+×
+2
+3
++
+1
+×
+2
+2
++
+0
+×
+2
+1
++
+1
+×
+2
+0
+=
+8
++
+4
++
+0
++
+1
+=
+1
+3
+10
+1101 
+2
+​
+ =1×2 
+3
+ +1×2 
+2
+ +0×2 
+1
+ +1×2 
+0
+ =8+4+0+1=13 
+10
+​
+ .
+4. Số nguyên có dấu:
+
+Phương pháp bù 2:
+Số nguyên có dấu được biểu diễn bằng bù 2 để dễ dàng thực hiện phép toán cộng và trừ.
+Ví dụ, để biểu diễn 
+−
+3
+−3 trong 8 bit:
+Biểu diễn 
+3
+3 dưới dạng nhị phân: 
+00000011
+00000011.
+Đảo bit: 
+11111100
+11111100.
+Cộng 1: 
+11111101
+11111101.
+Kiểm tra dấu số:
+Bit đầu tiên được dùng để chỉ dấu số: 0 cho số dương và 1 cho số âm.
+5. Phép cộng - trừ trên số nguyên:
+
+Cộng số nguyên có dấu:
+Sử dụng quy tắc cộng nhị phân thông thường. Nếu kết quả vượt quá kích thước bit, sẽ xảy ra hiện tượng tràn số.
+Trừ số nguyên có dấu:
+Trừ có thể được thực hiện bằng cách cộng số bị trừ với bù 2 của số trừ. Ví dụ: 
+5
+−
+3
+5−3 có thể được thực hiện bằng cách tính 
+5
++
+(
+−
+3
+)
+5+(−3).
+Ví dụ minh họa:
+Cộng 
+5
+5 và 
+−
+3
+−3:
+5
+5 = 
+00000101
+00000101
+−
+3
+−3 = 
+11111101
+11111101
+Cộng: 
+00000101
++
+11111101
+=
+00000010
+00000101+11111101=00000010 (kết quả là 
+2
+2).
+Trường hợp tràn số: Cộng 
+127
+127 và 
+1
+1 trong 8 bit sẽ dẫn đến 
+10000000
+10000000 (tương đương với 
+−
+128
+−128).
 # Chương 3
 - Chuyển đổi hệ cơ số
 
