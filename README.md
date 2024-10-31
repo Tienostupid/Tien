@@ -80,14 +80,15 @@
 
 ***Dưới đây là bảng hướng dẫn cách chuyển đổi số giữa các hệ thống số cơ bản (nhị phân, thập phân, bát phân, thập lục phân):***
 
-| **Chuyển Đổi**               | **Cách Thực Hiện**                                                                                                            | **Ví Dụ**                           |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
-| **Thập Phân sang Nhị Phân** | - Chia số thập phân cho 2. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | \( 13_{10} \) → \( 1101_2 \)       |
-| **Nhị Phân sang Thập Phân** | - Nhân từng bit của số nhị phân với \( 2^{n} \) (n là chỉ số bit, bắt đầu từ 0 từ phải sang trái). <br> - Cộng các giá trị.  | \( 1101_2 \) → \( 1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 13_{10} \) |
-| **Thập Phân sang Bát Phân** | - Chia số thập phân cho 8. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | \( 65_{10} \) → \( 101_8 \)       |
-| **Bát Phân sang Thập Phân** | - Nhân từng bit của số bát phân với \( 8^{n} \) (n là chỉ số bit). <br> - Cộng các giá trị.                                 | \( 101_8 \) → \( 1 \times 8^2 + 0 \times 8^1 + 1 \times 8^0 = 65_{10} \)   |
-| **Thập Phân sang Thập Lục Phân** | - Chia số thập phân cho 16. <br> - Ghi lại phần dư (0-9 và A-F). <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | \( 255_{10} \) → \( FF_{16} \)     |
-| **Thập Lục Phân sang Thập Phân** | - Nhân từng ký tự với \( 16^{n} \) (n là chỉ số ký tự). <br> - Cộng các giá trị (0-9 là giá trị bình thường, A=10, B=11,..., F=15). | \( FF_{16} \) → \( 15 \times 16^1 + 15 \times 16^0 = 255_{10} \) |
+| **Chuyển Đổi**                     | **Cách Thực Hiện**                                                                                                            | **Ví Dụ**                                           |
+|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Thập Phân sang Nhị Phân**       | - Chia số thập phân cho 2. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `13_{10}` → `1101_2`                               |
+| **Nhị Phân sang Thập Phân**       | - Nhân từng bit của số nhị phân với \(2^{n}\) (n là chỉ số bit, bắt đầu từ 0 từ phải sang trái). <br> - Cộng các giá trị.  | `1101_2` → `1 × 2^3 + 1 × 2^2 + 0 × 2^1 + 1 × 2^0 = 13_{10}` |
+| **Thập Phân sang Bát Phân**       | - Chia số thập phân cho 8. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `65_{10}` → `101_8`                               |
+| **Bát Phân sang Thập Phân**       | - Nhân từng bit của số bát phân với \(8^{n}\) (n là chỉ số bit). <br> - Cộng các giá trị.                                 | `101_8` → `1 × 8^2 + 0 × 8^1 + 1 × 8^0 = 65_{10}` |
+| **Thập Phân sang Thập Lục Phân**  | - Chia số thập phân cho 16. <br> - Ghi lại phần dư (0-9 và A-F). <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `255_{10}` → `FF_{16}`                             |
+| **Thập Lục Phân sang Thập Phân**  | - Nhân từng ký tự với \(16^{n}\) (n là chỉ số ký tự). <br> - Cộng các giá trị (0-9 là giá trị bình thường, A=10, B=11,..., F=15). | `FF_{16}` → `15 × 16^1 + 15 × 16^0 = 255_{10}`   |
+
 
 ### Lưu Ý:
 - Để chuyển đổi giữa các hệ thống số, bạn có thể kết hợp các bước trong bảng.
