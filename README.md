@@ -27,7 +27,7 @@
 - Máy chủ (Server)
 - Siêu máy tính (Supercomputer)
 - Máy tính lượng tử (Quantum Computer)
-## 2.Lịch sử phát triển của máy tính
+### 2.Lịch sử phát triển của máy tính
 - ***Jacques de Vaucanson***: Tiên phong trong tự động hóa.
 - ***Joseph Marie Jacquard***: Máy dệt tự động.
 - ***Charles Babbage***: "Cha đẻ của máy tính", phát minh máy tính Difference Engine và Analytical Engine.
@@ -35,13 +35,13 @@
 - ***ENIAC (1945)***: Máy tính đầu tiên lập trình được, rất lớn và phức tạp.
 - ***UNIVAC (1951)***: Máy tính thương mại đầu tiên.
 - ***IBM 7030 Stretch (1961)***: Máy tính với khả năng tính toán cao.
-## 3.Các thế hệ máy tính
+### 3.Các thế hệ máy tính
 - Thế hệ đầu tiên (1940-1955): Ống chân không, kích thước lớn.
 - Thế hệ thứ hai (1956-1963): Transistor, kích thước nhỏ hơn.
 - Thế hệ thứ ba (1964-1971): Mạch tích hợp (IC), hiệu suất cao.
 - Thế hệ thứ tư (1971-nay): Vi xử lý, máy tính cá nhân.
 - Thế hệ thứ năm (hiện tại và tương lai): Trí tuệ nhân tạo (AI) và máy tính lượng tử.
-## 4.Phần cứng máy tính
+### 4.Phần cứng máy tính
 **Các thành phần chính:**
 - Bo mạch chủ (Motherboard)
 - Bộ xử lý trung tâm (CPU)
@@ -58,7 +58,7 @@
 
 
 # Chương 2
- ## 1.Biểu diễn thông tin trong máy tính:
+ ### 1.Biểu diễn thông tin trong máy tính:
 
 **Bit và Byte:**
 - Thông tin trong máy tính được biểu diễn bằng các bit, với mỗi bit có thể là 0 hoặc 1.
@@ -66,7 +66,7 @@
 **Dữ liệu và kiểu dữ liệu:**
 - Các loại dữ liệu cơ bản trong máy tính bao gồm số nguyên, số thực, ký tự, chuỗi, và mảng.
 - Dữ liệu được lưu trữ và xử lý trong bộ nhớ, có thể được tổ chức dưới dạng cấu trúc dữ liệu phức tạp hơn.
-## 2.Hệ thống số:
+### 2.Hệ thống số:
 
 **Các hệ thống số chính:**
 - ***Hệ nhị phân (cơ số 2)***: Chỉ sử dụng hai ký tự 0 và 1. Ví dụ: 100110
@@ -76,7 +76,7 @@
   
 **Ý nghĩa và ứng dụng:**
 - Mỗi hệ thống có ứng dụng riêng, ví dụ hệ nhị phân là nền tảng của lập trình máy tính, trong khi hệ thập lục phân thường dùng để biểu diễn địa chỉ bộ nhớ.
-## 3.Chuyển đổi cơ số:
+### 3.Chuyển đổi cơ số:
 
 | **Chuyển Đổi**                     | **Cách Thực Hiện**                                                                                                            | **Ví Dụ**                                           |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
@@ -93,7 +93,7 @@
 - Để chuyển đổi giữa các hệ thống số, bạn có thể kết hợp các bước trong bảng.
 - Khi thực hiện các phép toán, hãy chú ý đến dấu hiệu số và kích thước bộ nhớ để tránh tràn số.
 
-## 4.Số nguyên có dấu:
+### 4.Số nguyên có dấu:
 
 | **Chuyển Đổi**                         | **Cách Thực Hiện**                                                                                              | **Ví Dụ**                                               |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -104,7 +104,7 @@
 | **Thập Phân sang Thập Lục Phân (bù 2)**| - Chuyển đổi sang nhị phân, sau đó sang thập lục phân. <br> - Đối với số âm, tìm bù 2.                         | 255<sub>10</sub> → FF<sub>16</sub> <br> - (-255)<sub>10</sub>: <br> 1. 255 → 11111111<sub>2</sub> → Đảo bit: 00000000 <br> 2. Cộng 1: 00000001 → 01<sub>16</sub> |
 | **Thập Lục Phân sang Thập Phân (bù 2)**| - Chuyển đổi sang nhị phân trước. <br> - Nếu bit cao nhất là F, lấy bù 2.                                     | FF<sub>16</sub> → 255<sub>10</sub> <br> - 80<sub>16</sub>: <br> 1. 80 → 10000000<sub>2</sub> → Đảo bit: 01111111 <br> 2. Cộng 1: 10000000 → -128<sub>10</sub> |
 
-## 5.Phép cộng - trừ trên số nguyên:
+### 5.Phép cộng - trừ trên số nguyên:
 
 | **Phép Toán**            | **Cách Thực Hiện**                                                                                               | **Ví Dụ**                                           |
 |--------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
