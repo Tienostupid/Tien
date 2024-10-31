@@ -93,7 +93,7 @@
 - Để chuyển đổi giữa các hệ thống số, bạn có thể kết hợp các bước trong bảng.
 - Khi thực hiện các phép toán, hãy chú ý đến dấu hiệu số và kích thước bộ nhớ để tránh tràn số.
 
-4. Số nguyên có dấu:
+## 4.Số nguyên có dấu:
 
 | **Chuyển Đổi**                         | **Cách Thực Hiện**                                                                                              | **Ví Dụ**                                               |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -104,58 +104,17 @@
 | **Thập Phân sang Thập Lục Phân (bù 2)**| - Chuyển đổi sang nhị phân, sau đó sang thập lục phân. <br> - Đối với số âm, tìm bù 2.                         | 255<sub>10</sub> → FF<sub>16</sub> <br> - (-255)<sub>10</sub>: <br> 1. 255 → 11111111<sub>2</sub> → Đảo bit: 00000000 <br> 2. Cộng 1: 00000001 → 01<sub>16</sub> |
 | **Thập Lục Phân sang Thập Phân (bù 2)**| - Chuyển đổi sang nhị phân trước. <br> - Nếu bit cao nhất là F, lấy bù 2.                                     | FF<sub>16</sub> → 255<sub>10</sub> <br> - 80<sub>16</sub>: <br> 1. 80 → 10000000<sub>2</sub> → Đảo bit: 01111111 <br> 2. Cộng 1: 10000000 → -128<sub>10</sub> |
 
-5. Phép cộng - trừ trên số nguyên:
+## 5.Phép cộng - trừ trên số nguyên:
 
-Cộng số nguyên có dấu:
-Sử dụng quy tắc cộng nhị phân thông thường. Nếu kết quả vượt quá kích thước bit, sẽ xảy ra hiện tượng tràn số.
-Trừ số nguyên có dấu:
-Trừ có thể được thực hiện bằng cách cộng số bị trừ với bù 2 của số trừ. Ví dụ: 
-5
-−
-3
-5−3 có thể được thực hiện bằng cách tính 
-5
-+
-(
-−
-3
-)
-5+(−3).
-Ví dụ minh họa:
-Cộng 
-5
-5 và 
-−
-3
-−3:
-5
-5 = 
-00000101
-00000101
-−
-3
-−3 = 
-11111101
-11111101
-Cộng: 
-00000101
-+
-11111101
-=
-00000010
-00000101+11111101=00000010 (kết quả là 
-2
-2).
-Trường hợp tràn số: Cộng 
-127
-127 và 
-1
-1 trong 8 bit sẽ dẫn đến 
-10000000
-10000000 (tương đương với 
-−
-128
-−128).
+| **Phép Toán**            | **Cách Thực Hiện**                                                                                               | **Ví Dụ**                                           |
+|--------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Cộng số dương**       | - Cộng hai số nhị phân bằng cách thực hiện phép cộng từng cặp bit. <br> - Nếu có tổng lớn hơn 1, ghi 0 và mang 1 sang bit tiếp theo. | 3<sub>10</sub> + 5<sub>10</sub>: <br> 0011<sub>2</sub> + 0101<sub>2</sub> = 1000<sub>2</sub> (8<sub>10</sub>) |
+| **Cộng số âm**          | - Chuyển số âm sang bù 2. <br> - Cộng như số dương. <br> - Nếu kết quả có bit tràn (carry), bỏ qua bit này. | -5<sub>10</sub> + 3<sub>10</sub>: <br> 1011<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (-2<sub>10</sub>) |
+| **Cộng số trái dấu**    | - Nếu một số dương và một số âm, chuyển số âm sang bù 2 và thực hiện phép cộng. <br> - Kết quả có thể dương hoặc âm. | 5<sub>10</sub> + (-3)<sub>10</sub>: <br> 0101<sub>2</sub> + 1101<sub>2</sub> = 0010<sub>2</sub> (2<sub>10</sub>) |
+| **Trừ số dương**        | - Chuyển số bị trừ thành số âm và thực hiện phép cộng. <br> - Nếu không có bit tràn, kết quả dương. | 8<sub>10</sub> - 3<sub>10</sub>: <br> 1000<sub>2</sub> + 1101<sub>2</sub> = 0101<sub>2</sub> (5<sub>10</sub>) |
+| **Trừ số âm**           | - Chuyển số âm thành số dương và thực hiện phép cộng. <br> - Kết quả có thể là dương hoặc âm. | -5<sub>10</sub> - 3<sub>10</sub>: <br> 1011<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (-8<sub>10</sub>) |
+| **Trừ số trái dấu**     | - Nếu một số dương và một số âm, cộng với bù 2 của số âm. <br> - Kết quả có thể dương hoặc âm. | 5<sub>10</sub> - (-3)<sub>10</sub>: <br> 0101<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (8<sub>10</sub>) |
+
 # Chương 3
 - Chuyển đổi hệ cơ số
 
