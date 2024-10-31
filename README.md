@@ -160,6 +160,109 @@
 -VietJack
 **Thực hành:**
 - Sử dụng máy tính trong phòng lab hoặc Phenikaa Jupyter hub.
+  Dưới đây là bảng tóm tắt các mục từ mục 4 trở xuống trong nội dung bạn đã cung cấp:
+
+### Lịch sử Linux và Unix
+
+| Hệ Điều Hành | Năm Phát Triển | Người Phát Triển                     | Thông Tin Nổi Bật                                       |
+|---------------|----------------|--------------------------------------|---------------------------------------------------------|
+| Unix          | 1969           | Dennis Ritchie và Ken Thompson       | Nhiều người dùng, hệ thống tập tin phân cấp, tài liệu có sẵn; macOS là một phiên bản ngụy trang của Unix. |
+| Linux         | 1992           | Linus Torvalds                      | Phát triển dựa trên Unix, cũng là người phát triển git. |
+
+### Bản Phân Phối Linux
+
+| Phân Phối      | Đặc Điểm                                              |
+|----------------|------------------------------------------------------|
+| **Debian**     | Sử dụng gói Debian (.deb), quản lý phần mềm bằng apt. |
+| - Ubuntu       | Dẫn xuất phổ biến từ Debian.                         |
+| - Kali Linux   | Dành cho bảo mật và kiểm thử xâm nhập.              |
+| - Linux Mint   | Giao diện người dùng thân thiện.                     |
+| - Raspbian     | Dành cho Raspberry Pi.                               |
+| **Red Hat Linux** | Sử dụng Redhat Package Manager (.rpm), quản lý phần mềm bằng yum. |
+| - Red Hat Enterprise Linux (RHEL) | Phiên bản doanh nghiệp.         |
+| - Fedora       | Cung cấp các tính năng mới nhất.                    |
+| - CentOS       | Phiên bản miễn phí của RHEL.                         |
+
+### Hệ Thống Tệp Linux
+
+| Thư Mục      | Mô Tả                                         |
+|--------------|-----------------------------------------------|
+| `/`          | Thư mục gốc chứa tất cả các thư mục         |
+| `/bin`       | Ứng dụng/chương trình (binaries)            |
+| `/dev`       | Thiết bị phần cứng                           |
+| `/etc`       | Tệp cấu hình                                 |
+| `/home`      | Chứa thư mục chính của người dùng           |
+| `/proc`      | Thông tin về các quy trình đang chạy        |
+| `/tmp`       | Tệp tạm thời                                |
+| `/var`       | Tệp dữ liệu thay đổi trong quá trình hoạt động |
+| `/usr`       | Tài nguyên hệ thống phổ quát                 |
+
+### Các Lệnh Shell Cơ Bản
+
+| Lệnh     | Mô Tả                               |
+|----------|-------------------------------------|
+| `pwd`    | In thư mục làm việc hiện tại       |
+| `cd`     | Thay đổi thư mục làm việc          |
+| `ls`     | Liệt kê các tệp trong thư mục làm việc |
+| `man`    | Đưa ra hướng dẫn cho một lệnh      |
+| `exit`   | Đăng xuất khỏi shell                |
+
+### Lệnh Hệ Thống
+
+| Lệnh    | Mô Tả                                      |
+|---------|--------------------------------------------|
+| `clear` | Xóa tất cả đầu ra khỏi bảng điều khiển    |
+| `date`  | Xuất ngày hệ thống                         |
+| `cal`   | Xuất lịch văn bản                          |
+| `uname` | In thông tin về hệ thống hiện tại       |
+
+### Lệnh Thư Mục
+
+| Lệnh     | Mô Tả                              |
+|----------|------------------------------------|
+| `ls`     | Liệt kê các tệp trong thư mục làm việc |
+| `pwd`    | In thư mục làm việc hiện tại      |
+| `cd`     | Thay đổi thư mục làm việc         |
+| `mkdir`  | Tạo một thư mục mới               |
+| `rmdir`  | Xóa thư mục đã cho (phải trống)   |
+
+### Lệnh Tệp
+
+| Lệnh     | Mô Tả                               |
+|----------|-------------------------------------|
+| `cat`    | Hiển thị nội dung tệp              |
+| `cp`     | Sao chép tệp                        |
+| `mv`     | Di chuyển tệp (cũng được sử dụng để đổi tên tệp) |
+| `rm`     | Xóa tệp đã cho                     |
+| `touch`  | Tạo tệp trống hoặc thay đổi thời gian sửa đổi |
+
+### Quyền Truy Cập
+
+| Quyền Truy Cập  | Mô Tả                                 |
+|------------------|---------------------------------------|
+| `read (r)`       | Quyền đọc                            |
+| `write (w)`      | Quyền ghi                             |
+| `execute (x)`    | Quyền thực thi                       |
+
+### Thay Đổi Quyền Truy Cập
+
+| Lệnh                | Mô Tả                                 |
+|---------------------|---------------------------------------|
+| `chmod`             | Thay đổi quyền truy cập               |
+| **Who**             | `u`: chủ sở hữu, `g`: nhóm, `o`: người khác, `a`: tất cả |
+| **Mode**            | `r`: read, `w`: write, `x`: execute   |
+| **Op**              | `+`: cấp quyền, `-`: thu hồi quyền, `=`: đặt lại quyền |
+
+### Ví Dụ Quyền Truy Cập
+
+| Octal Value | Quyền Truy Cập    |
+|-------------|-------------------|
+| 600         | rw-------          |
+| 644         | rw-r--r--         |
+| 700         | rwx------          |
+| 751         | rwxr-x--x         |
+| 775         | rwxrwxr-x         |
+| 777         | rwxrwxrwx         |
 
 # Chương 5
 - Githib
