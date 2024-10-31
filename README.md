@@ -140,6 +140,26 @@
 ### 4.Đạo đức sử dụng AI
 - Cần sử dụng ChatGPT một cách hợp lý và chịu trách nhiệm với nội dung được tạo ra, kiểm chứng thông tin từ nhiều nguồn.
 # Chương 4
-- Hệ điều hành Linux
+### 1. Giới thiệu về Linux
+***Unix:***
+- Phát triển năm 1969 bởi Dennis Ritchie và Ken Thompson tại Bell Labs.
+- Hỗ trợ nhiều người dùng và hệ thống tập tin phân cấp.
+- macOS là hệ điều hành dựa trên Unix.
+***Linux:***
+- Được phát triển năm 1992 bởi Linus Torvalds.
+### 2.Các bản phân phối Linux
+***Debian:***
+- Các bản phân phối như Ubuntu, Linux Mint, Kali Linux, Raspbian, v.v.
+- Sử dụng gói Debian (dpkg) để quản lý phần mềm.
+***Red Hat:***
+- Các bản phân phối như Red Hat Enterprise Linux (RHEL), Fedora, CentOS.
+- Sử dụng Red Hat Package Manager (.rpm).
+### 3.Nơi học và thực hành Linux
+**Liên kết học tập:**
+-LabEx
+-VietJack
+**Thực hành:**
+- Sử dụng máy tính trong phòng lab hoặc Phenikaa Jupyter hub.
+
 # Chương 5
 - Githib
