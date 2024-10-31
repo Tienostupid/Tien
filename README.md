@@ -80,12 +80,12 @@
 
 | **Chuyển Đổi**                     | **Cách Thực Hiện**                                                                                                            | **Ví Dụ**                                           |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Thập Phân sang Nhị Phân**       | - Chia số thập phân cho 2. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `13<sub>10</sub>` → `1101<sub>2</sub>`                               |
-| **Nhị Phân sang Thập Phân**       | - Nhân từng bit của số nhị phân với \(2^{n}\) (n là chỉ số bit, bắt đầu từ 0 từ phải sang trái). <br> - Cộng các giá trị.  | `1101<sub>2</sub>` → `1 × 2<sup>3</sup> + 1 × 2<sup>2</sup> + 0 × 2<sup>1</sup> + 1 × 2<sup>0</sup> = 13<sub>10</sub>` |
-| **Thập Phân sang Bát Phân**       | - Chia số thập phân cho 8. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `65<sub>10</sub>` → `101<sub>8</sub>`                               |
-| **Bát Phân sang Thập Phân**       | - Nhân từng bit của số bát phân với \(8^{n}\) (n là chỉ số bit). <br> - Cộng các giá trị.                                 | `101<sub>8</sub>` → `1 × 8<sup>2</sup> + 0 × 8<sup>1</sup> + 1 × 8<sup>0</sup> = 65<sub>10</sub>` |
-| **Thập Phân sang Thập Lục Phân**  | - Chia số thập phân cho 16. <br> - Ghi lại phần dư (0-9 và A-F). <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | `255<sub>10</sub>` → `FF<sub>16</sub>`                             |
-| **Thập Lục Phân sang Thập Phân**  | - Nhân từng ký tự với \(16^{n}\) (n là chỉ số ký tự). <br> - Cộng các giá trị (0-9 là giá trị bình thường, A=10, B=11,..., F=15). | `FF<sub>16</sub>` → `15 × 16<sup>1</sup> + 15 × 16<sup>0</sup> = 255<sub>10</sub>`   |
+| **Thập Phân sang Nhị Phân**       | - Chia số thập phân cho 2. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | 13<sub>10</sub> → 1101<sub>2</sub>                               |
+| **Nhị Phân sang Thập Phân**       | - Nhân từng bit của số nhị phân với \(2^{n}\) (n là chỉ số bit, bắt đầu từ 0 từ phải sang trái). <br> - Cộng các giá trị.  | 1101<sub>2</sub> → 1 × 2<sup>3</sup> + 1 × 2<sup>2</sup> + 0 × 2<sup>1</sup> + 1 × 2<sup>0</sup> = 13<sub>10</sub> |
+| **Thập Phân sang Bát Phân**       | - Chia số thập phân cho 8. <br> - Ghi lại phần dư. <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | 65<sub>10</sub> → 101<sub>8</sub>                               |
+| **Bát Phân sang Thập Phân**       | - Nhân từng bit của số bát phân với \(8^{n}\) (n là chỉ số bit). <br> - Cộng các giá trị.                                 | 101<sub>8</sub> → 1 × 8<sup>2</sup> + 0 × 8<sup>1</sup> + 1 × 8<sup>0</sup> = 65<sub>10</sub> |
+| **Thập Phân sang Thập Lục Phân**  | - Chia số thập phân cho 16. <br> - Ghi lại phần dư (0-9 và A-F). <br> - Lặp lại cho đến khi thương số bằng 0. <br> - Đọc các phần dư từ dưới lên. | 255<sub>10</sub> → FF<sub>16</sub>                             |
+| **Thập Lục Phân sang Thập Phân**  | - Nhân từng ký tự với \(16^{n}\) (n là chỉ số ký tự). <br> - Cộng các giá trị (0-9 là giá trị bình thường, A=10, B=11,..., F=15). | FF<sub>16</sub> → 15 × 16<sup>1</sup> + 15 × 16<sup>0</sup> = 255<sub>10</sub>   |
 
 
 
