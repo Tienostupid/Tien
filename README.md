@@ -58,18 +58,18 @@
 
 
 # Chương 2
- Biểu diễn thông tin trong máy tính:
+ ## 1.Biểu diễn thông tin trong máy tính:
 
-Bit và Byte:
-Thông tin trong máy tính được biểu diễn bằng các bit, với mỗi bit có thể là 0 hoặc 1.
-Một byte gồm 8 bit, có thể biểu diễn 256 giá trị khác nhau (từ 0 đến 255).
-Dữ liệu và kiểu dữ liệu:
-Các loại dữ liệu cơ bản trong máy tính bao gồm số nguyên, số thực, ký tự, chuỗi, và mảng.
-Dữ liệu được lưu trữ và xử lý trong bộ nhớ, có thể được tổ chức dưới dạng cấu trúc dữ liệu phức tạp hơn.
-2. Hệ thống số:
+**Bit và Byte:**
+- Thông tin trong máy tính được biểu diễn bằng các bit, với mỗi bit có thể là 0 hoặc 1.
+- Một byte gồm 8 bit, có thể biểu diễn 256 giá trị khác nhau (từ 0 đến 255).
+**Dữ liệu và kiểu dữ liệu:**
+- Các loại dữ liệu cơ bản trong máy tính bao gồm số nguyên, số thực, ký tự, chuỗi, và mảng.
+- Dữ liệu được lưu trữ và xử lý trong bộ nhớ, có thể được tổ chức dưới dạng cấu trúc dữ liệu phức tạp hơn.
+## 2.Hệ thống số:
 
-Các hệ thống số chính:
-Hệ nhị phân (cơ số 2): Chỉ sử dụng hai ký tự 0 và 1. Ví dụ: 
+**Các hệ thống số chính:**
+- ***Hệ nhị phân (cơ số 2)***: Chỉ sử dụng hai ký tự 0 và 1. Ví dụ: 
 101
 1
 2
