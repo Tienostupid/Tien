@@ -116,44 +116,29 @@
 | **Trừ số trái dấu**     | - Nếu một số dương và một số âm, cộng với bù 2 của số âm. <br> - Kết quả có thể dương hoặc âm. | 5<sub>10</sub> - (-3)<sub>10</sub>: <br> 0101<sub>2</sub> + 0011<sub>2</sub> = 1000<sub>2</sub> (8<sub>10</sub>) |
 
 # Chương 3
-- Chuyển đổi hệ cơ số
-
-### Bảng Hướng Dẫn Chuyển Đổi Hệ Cơ Số
-
-| Hệ Cơ Số  | Ký Hiệu | Giải Thích                      |
-|------------|---------|---------------------------------|
-| Nhị Phân   | 0, 1    | Sử dụng 2 ký tự (0 và 1).      |
-| Thập Phân  | 0-9     | Sử dụng 10 ký tự (0 đến 9).    |
-| Bát Phân   | 0-7     | Sử dụng 8 ký tự (0 đến 7).      |
-| Thập Lục   | 0-9, A-F| Sử dụng 16 ký tự (0-9, A-F).    |
-
-### Cách Chuyển Đổi
-
-1. **Chuyển Đổi Nhị Phân sang Thập Phân**:
-   - Nhân mỗi chữ số với 2 mũ vị trí của nó (tính từ phải sang trái, bắt đầu từ 0).
-   - Cộng tất cả các giá trị lại.
-
-2. **Chuyển Đổi Thập Phân sang Nhị Phân**:
-   - Chia số cho 2 và ghi lại phần dư.
-   - Tiếp tục chia cho 2 cho đến khi thương bằng 0. Đọc các phần dư từ dưới lên.
-
-
-3. **Chuyển Đổi Nhị Phân sang Bát Phân**:
-   - Nhóm các chữ số nhị phân thành từng nhóm 3, bắt đầu từ bên phải. Thêm số 0 nếu cần thiết.
-   - Chuyển đổi mỗi nhóm sang một chữ số bát phân.
-
-
-4. **Chuyển Đổi Bát Phân sang Nhị Phân**:
-   - Chuyển đổi từng chữ số bát phân sang nhị phân (3 chữ số cho mỗi chữ số bát phân).
-
-
-5. **Chuyển Đổi Thập Phân sang Thập Lục**:
-   - Chia số cho 16 và ghi lại phần dư.
-   - Chuyển các phần dư từ 10 trở lên thành A-F.
-
-6. **Chuyển Đổi Thập Lục sang Thập Phân**:
-   - Nhân mỗi chữ số với 16 mũ vị trí của nó.
-
+### 1.Khái niệm cơ bản
+- Tập tin: Là đơn vị lưu trữ dữ liệu với các định dạng khác nhau, như văn bản, hình ảnh, âm thanh, và có phần mở rộng (ví dụ: .pdf, .txt).
+- Thư mục: Là đơn vị logic để tổ chức và nhóm các tập tin, có thể chứa nhiều thư mục con.
+**Cấu trúc thư mục**
+- Tập tin và thư mục được tổ chức theo dạng cây, với đường dẫn (path name) mô tả vị trí của chúng trong hệ thống máy tính. Đường dẫn có thể là:
+- Tuyệt đối (absolute path): chỉ rõ vị trí từ thư mục gốc (ví dụ: C:\Program Files\MyApp\app.exe).
+- Tương đối (relative path): chỉ vị trí dựa trên thư mục hiện tại (ví dụ: ..\Documents).
+**Hoạt động thực hành**
+-Thực hành tạo cấu trúc thư mục cho dự án.
+-Sử dụng File Explorer để tạo, đổi tên, sao chép, di chuyển, và xóa tập tin/thư mục.
+### 2.Google Drive
+- Google Drive là dịch vụ lưu trữ đám mây cho phép người dùng lưu trữ và chia sẻ tập tin, đồng thời hỗ trợ làm việc chung hiệu quả.
+- Cung cấp tính năng tạo và chỉnh sửa tài liệu, bảng tính, và trình bày.
+- Hướng dẫn truy cập và chia sẻ tập tin với người khác.
+- Tìm kiếm thông tin với Google Search
+- Sử dụng công cụ tìm kiếm để truy cập thông tin trên Internet.
+- Google sử dụng công nghệ crawling và indexing để phân tích và lưu trữ dữ liệu.
+### 3.Sử dụng ChatGPT
+- Generative AI (AI tạo sinh) như ChatGPT có khả năng hiểu và phản hồi câu hỏi bằng ngôn ngữ tự nhiên.
+- Các kỹ thuật Prompt Engineering như Zero-shot, Few-shot, và Chain-of-Thought giúp tối ưu hóa khả năng tương tác với ChatGPT.
+- Ứng dụng ChatGPT trong học tập để tóm tắt tài liệu, giải thích khái niệm và hỗ trợ lập trình.
+### 4.Đạo đức sử dụng AI
+- Cần sử dụng ChatGPT một cách hợp lý và chịu trách nhiệm với nội dung được tạo ra, kiểm chứng thông tin từ nhiều nguồn.
 # Chương 4
 - Hệ điều hành Linux
 # Chương 5
